@@ -1,0 +1,174 @@
+/******************** GRAND ********************/
+@media screen and (min-width: 1920px) {
+    body{
+        font-size: 25px
+    }
+
+    .accueil h1{
+        font-size: 3rem;
+    }
+
+    section{
+        padding: 2%;
+    }
+
+    #aPropos div{
+        img{
+            align-items: center;
+            width: 24vw;
+            margin-bottom: 2rem;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            margin-top: 2%;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                width: 40vw;
+                margin: 0 2.5vw;
+                p:nth-child(1){
+                    font-size: 1.25rem;
+                    margin: 0 2rem;
+                    line-height: 2.5rem;
+                }
+                p:nth-child(2){
+                    font-size: 1.5rem;
+                    margin: 2rem 0;
+                    line-height: 2.5rem;
+                }
+                a{
+                    display: block;
+                    min-width: 200px;
+                    padding: 15px 20px; 
+                    border: none;
+                    font-family: Magnolia;
+                    font-size: 1.5rem;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    background: var(--Bouton);
+                    border: var(--BordureBouton);
+                    box-shadow: var(--Ombre);
+                    color: var(--EcritureBouton);
+                    transition: transform 0.5s ease-out;
+                    &:hover{
+                        font-weight: bold;
+                        box-shadow: none;
+                        background: var(--BoutonHover);
+                        border: var(--BordureBouton);
+                        transition: transform 0.5s ease-out;
+                        transform: scale(1.2);
+                    }
+                    &:active{
+                        transform: scale(1.1);
+                        background: var(--Violet);
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                width: 15vw;
+                li:first-child{
+                    font-size: 1.5rem;
+                    padding: 0.75rem;
+                }
+                li{
+                    font-size: 1.25rem;
+                    padding: 0.75rem;
+                }
+            }
+            a{
+            display: none;
+            }
+        }
+        
+    }
+
+    #mecaniques ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #chat div {
+        display: flex;
+        flex-direction: row;
+        p{
+            width: 40vw;
+        }
+    }
+
+    .arcade{
+        .grille {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            .tuile {
+                height: 375px;
+                figure {
+                    img{
+                        width: 450px;
+                        height: 300px;
+                    }
+                    figcaption{
+                        height: 75px;
+                        h3{
+                            font-size: 2rem;
+                        }
+                        p{
+                            font-weight: bold;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .details{
+                    padding-top: 35px;
+                    p{
+                        font-size: 1.5rem;
+                        line-height: 1.75rem;
+                    }
+                    a,
+                    ul li,
+                    p:nth-child(3){
+                        font-size: 1.25rem;
+                    }
+                }
+                &:hover{
+                    figure figcaption{
+                        height: 50px;
+                        h3{
+                            font-size: 1.75rem;
+                        }
+                        p{
+                            font-weight: bold;
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    footer{
+        h2 {
+            font-size: 2rem;
+        }
+        a {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+        }
+        #reseau img{
+            width: 60px;
+            height:60px;
+        }
+    }
+    
+    .cache {
+        pointer-events: none;
+        display: none;
+    }
+}

@@ -1,0 +1,99 @@
+/******************** GLOBAL ********************/
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/******************** VARIABLES ********************/
+@font-face {
+  font-family: "Magnolia";
+  src:
+    url(../font/MagnoliaScript.otf);
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src:
+    url(../font/Philosopher-Regular.ttf);
+}
+
+:root{
+    --EcritureVert: #1b4b1f;
+    --EcritureBleu:#0b222d;
+    --EcritureBouton: #481468;
+    --ArrierePlan: #82963c;
+    --ArriereTransparent:rgb(212, 229, 153, 0.5);
+    --Tag: #d4e599;
+    --DegradeCiel: linear-gradient(to bottom, #40bfff 10%, #afffff 90%);
+    --Bouton: #e1d7ff;
+    --BoutonHover:linear-gradient(to bottom left, #af32ff 10%, #e1d7ff 90%);
+    --BoutonActif: #af32ff;
+    --BordureTag: 1px solid #338039;
+    --BordureBouton: 2px solid #481468;
+    --BordureHover: 1px solid #e1d7ff;
+    --Ombre:rgba(30, 30, 30, 0.25) 5px 5px 2.5px;
+}
+
+.theme-toggle:checked ~ .site{
+    --EcritureVert: #82963c;
+    --EcritureBleu:#0b222d;
+    --EcritureBouton: #ff8080;
+    --ArrierePlan: #338039;
+    --ArriereTransparent:rgb(51, 128, 57, 0.5);
+    --Tag: #1b4b1f;
+    --DegradeCiel: linear-gradient(to bottom, #afffff 10%, #40bfff 90%);
+    --Bouton: #ffdfdf;
+    --BoutonHover:linear-gradient(to bottom left, #ffbfbf 10%, #ffdfdf 90%);
+    --BoutonActif: #ffbfbf;
+    --BordureTag: 1px solid #82963c;
+    --BordureBouton: 2px solid #ffbfbf;
+    --BordureHover: 1px solid #ffdfdf;
+    --Ombre:rgba(30, 30, 30, 0.25) 5px 5px 2.5px;
+}
+
+@keyframes apparition-plat {
+	from {
+		opacity: 0;
+		translate: -50px 0;
+	}
+
+	to {
+		opacity: 1;
+		translate: 0 0;
+	}
+}
+
+@keyframes dactylo {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 16ch;
+	}
+}
+
+@keyframes curseur-clignotant {
+	0% {
+		border-right-color: var(--VioletPale);
+	}
+
+	100% {
+		border-right-color: var(--Violet);
+	}
+}
+
+@keyframes rebondi {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="ressources/css/style.css">
+        <link rel="stylesheet" href="ressources/css/mobile.css">
+        <link rel="stylesheet" href="ressources/css/tablette.css">
+        <link rel="stylesheet" href="ressources/css/bureau.css">
+        <link rel="stylesheet" href="ressources/css/grand.css">
+        <link rel="icon" type="image/x-icon" href="ressources/images/favicon.png">
+        <script src="ressources/js/AnimationAccueil.js" defer></script>
+        <script src="ressources/js/MenuBurger.js" defer></script>
+        <script src="ressources/js/ListeJeux.js" defer></script>
+        <link rel="preload" as="image" href="ressources/images/accueilGrand.png">
+        <link rel="preload" as="image" href="ressources/images/accueilPetit.png">
+
+        <title>Mon Petit Miaou</title>
+    </head>
+    <body>
+        <div class="accueil">
+            <picture>
+                <source 
+                    media="(min-width: 1200px)" 
+                    srcset="ressources/images/accueilGrand.png">
+                <img 
+                    src="ressources/images/accueilPetit.png"
+                    alt="accueil"
+                >
+            </picture>
+            <h1 class="titre-dactylo">Mon Petit Miaou</h1>
+        </div>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle">
+        <div class="site cache">
+            <a id="fleche" href="#top"><span></span></a>
+            <header>
+                <!--Taille 768px 1200px 1920px-->
+                <picture>
+                    <source 
+                        media="(min-width: 1920px)" 
+                        srcset="ressources/images/banniere1_grand.png">
+                    <source 
+                        media="(min-width: 1200px)" 
+                        srcset="ressources/images/banniere2_bureau.png">
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="ressources/images/banniere3_tablette.png">
+                    <img 
+                        src="ressources/images/banniere4_mobile.png"
+                        style="width: 100vw; height: auto;"
+                        alt="banniere"
+                        id="top"
+                    >
+                </picture>
+                <div id="navigation">
+                    <input id="nav-toggle" class="nav-toggle" type="checkbox">
+                    <label for="nav-toggle" class="burger material-icons">
+                        <span class="material-icons"></span>
+                        <span class="material-icons"></span>
+                        <span class="material-icons"></span>
+                    </label>
+                    <nav class="nav-principale partie">
+                        <div>
+                            <a href="#aPropos"aria-current="page">À propos</a>
+                            <a href="#niveaux">Niveaux</a>
+                            <a href="#mecaniques">Mécaniques</a>
+                            <a href="#chat">Le Savais-tu?</a>
+                            <a href="#creatrice">Créatrice</a>
+                            <a href="#vedette">En Vedette</a>
+                        </div>
+                        <label for="theme-toggle" class="bouton-theme">
+                            <span id="boutonTheme"></span>
+                        </label>
+                    </nav>
+                </div>
+            </header>
+            <main class="contenu-principal partie">
+                <section id="aPropos">
+                    <h2>À propos</h2>
+                    <div>
+                        <img src="ressources/images/chat.png" alt="accueil">
+                        <div>
+                            <div>
+                                <p>« Il était une fois, une petite fée nommé Ondine. Elle était l’amie des animaux. Un jour, en se promenant dans une forêt enchantée, elle trouva un petit chat perdu. Ondine décida d’en prendre soin. Aujourd’hui, elle a besoin de ton aide pour s’occuper de lui. »Ludique tout en restant éducatif, Mon Petit Miaou offre la possibilité aux tout-petits (2 à 5 ans) d’apprendre à prendre soin d’un animal de compagnie à travers différentes actions.</p>
+                                <p>Ludique tout en restant éducatif, Mon Petit Miaou offre la possibilité aux tout-petits (2 à 5 ans) d’apprendre à prendre soin d’un animal de compagnie à travers différentes actions.</p>
+                                <a href="https://h26-2j2.github.io/MelyseMalo_TravailPratique/" target="_blank">Clique ici pour jouer</a>
+                            </div>
+                            <ul>
+                                <li>Public Cible : 2 à 5 ans</li>
+                                <li>Simulation</li>
+                                <li>Éducatif</li>
+                                <li>Exploration</li>
+                                <li>Responsabilisation</li>
+                                <li>Ludique</li>
+                                <li>Créatif</li>
+                            </ul>
+                            <a href="https://h26-2j2.github.io/MelyseMalo_TravailPratique/" target="_blank">Clique ici pour jouer</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="niveaux">
+                    <h2>Niveaux</h2>
+                    <div id="flexNiveau">
+                        <div>
+                            <h3>Nourrit Petit Miaou</h3>
+                            <img src="ressources/images/niveau1.png" id="imgNiv1" alt="Image_Niv1">
+                        </div>
+                        <div>
+                            <h3>Soigne Petit Miaou</h3>
+                            <img src="ressources/images/niveau2.png" id="imgNiv2" alt="Image_Niv2">
+                        </div>
+                        <div>
+                            <h3>Joue avec Petit Miaou</h3>
+                            <img src="ressources/images/niveau3.png" id="imgNiv3" alt="Image_Niv3">
+                        </div>
+                    </div>
+                </section>
+                <section id="mecaniques">
+                    <h2>Mécaniques du Jeu</h2>
+                    <ul>
+                        <li>Effectuer une série d'action aux choix</li>
+                        <li>Explorer l'univers du jeu sans contrainte</li>
+                        <li>Apprendre à prendre soin d'autruit</li>
+                    </ul>
+                </section>
+                <section id="chat">
+                    <h2>Le Savais-Tu?</h2>
+                    <div>
+                        <p>Lorsqu'un chat te regarde et cligne lentement les yeux, cela veut dire qu'il te fait confiance. C'est en quelque sorte marque de tendresse.</p>
+                        <p>Les chats peuvent vivre jusqu'à 20 ans.</p>
+                    </div>
+                </section>
+                <section id="creatrice">
+                    <h2>Créatrice</h2>
+                    <div>
+                        <img src="ressources/images/fee.png" alt="accueil">
+                        <p>Salut! Moi c'est Mélyse! <br>
+                            Je suis étudiante en intégration multimédia au Collège de Maisonneuve. 
+                            Si je devais me décrire en temps qu'intégratrice multimédia, je dirais que je me distingue 
+                            par ma créativité, ma persévérance et ma soif d’apprentissage. 
+                            Mon parcours en intervention m’a permis de développer une sensibilité aux réalités sociales.</p>
+                    </div>
+                </section>
+                <section id="vedette" class="arcade">
+                    <h2>Plus de Jeux</h2>
+                    <div class="grille"></div>
+                    <template id="gabaritJeu">
+                            <article class="tuile">
+                                <figure>
+                                    <img src="" class="imageJeu" alt="">
+                                    <figcaption>
+                                        <h3 class="titreJeu"></h3>
+                                        <p class="publicJeu"></p>
+                                    </figcaption>
+                                </figure>
+                                <div class="details">
+                                    <ul class="listeTagJeu">
+                                        <li class="tagJeu"></li>
+                                    </ul>
+                                    <p class="descriptionJeu"></p>
+                                    <p class="developpeurJeu">Développer par: </p>
+                                    <a href="" target="_blank" class="urlJeu">Clique ici pour jouer !</a>
+                                </div>
+                            </article>
+                        </template>
+                    <a class="changePage" href="arcade.html">Clique ici pour accéder à plus de jeu!</a>
+                </section>
+
+            </main>
+            <footer class="partie">
+                <div class="contact">
+                    <a href="https://h26-2j2.github.io/MelyseMalo_TravailPratique/" target="_blank">
+                        <img src="ressources/images/image.png" alt="Logo">
+                    </a>
+                    <h2>Mélyse L. Malo</h2>
+                    <div>
+                        <a href="https://cazalie.github.io/Porfolio-MelyseMalo/" target="_blank">Mon Portefolio</a>
+                    </div>
+                </div>
+                <div class="media">
+                    <h2>Pour suivre mes aventures</h2>
+                    <div class="reseaux">
+                        <a href="https://www.behance.net/MelyseLarissaMalo" target="_blank">
+                            <img src="ressources/images/Behance.png" alt="Behance">
+                        </a>
+                        <a href="https://www.linkedin.com/in/m%C3%A9lyse-larissa-malo-3536a9155/" target="_blank">
+                            <img src="ressources/images/Linkedln.png" alt="Linkedln">
+                        </a>
+                        <a href="https://www.facebook.com/melymaloproduction" target="_blank">
+                            <img src="ressources/images/Facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/melymaloproduction/?hl=fr-ca" target="_blank">
+                            <img src="ressources/images/Instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="ref">
+                    <a href="https://www.cmaisonneuve.qc.ca/" target="_blank">
+                        <img src="ressources/images/cegep.jpg" alt="Logo">
+                    </a>
+                    <div>
+                        <p><b>Collège Maisonneuve</b></p>
+                        <p>Technique d'Intégration Multimédia</p>
+                        <p>Hiver 2026</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
