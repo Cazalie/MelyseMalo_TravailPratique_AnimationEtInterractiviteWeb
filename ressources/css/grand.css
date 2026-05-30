@@ -40,30 +40,6 @@
                 }
                 a{
                     display: block;
-                    min-width: 200px;
-                    padding: 15px 20px; 
-                    border: none;
-                    font-family: Magnolia;
-                    font-size: 1.5rem;
-                    border-radius: 10px;
-                    text-decoration: none;
-                    background: var(--Bouton);
-                    border: var(--BordureBouton);
-                    box-shadow: var(--Ombre);
-                    color: var(--EcritureBouton);
-                    transition: transform 0.5s ease-out;
-                    &:hover{
-                        font-weight: bold;
-                        box-shadow: none;
-                        background: var(--BoutonHover);
-                        border: var(--BordureBouton);
-                        transition: transform 0.5s ease-out;
-                        transform: scale(1.2);
-                    }
-                    &:active{
-                        transform: scale(1.1);
-                        background: var(--Violet);
-                    }
                 }
             }
             ul{

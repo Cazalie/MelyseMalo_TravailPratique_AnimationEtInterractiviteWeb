@@ -180,6 +180,34 @@ picture{
     color: var(--EcritureBouton);
 }
 
+ .bouton{
+    display: inline-block;
+    min-width: 200px;
+    padding: 0.5rem 2rem;
+    margin: 2.5rem auto; 
+    font-family: Magnolia;
+    font-size: 1.25rem;
+    background: var(--Bouton);
+    border: var(--BordureBouton);
+    border-radius: 20px;
+    box-shadow: var(--Ombre);
+    text-decoration: none;
+    color: var(--EcritureBouton);
+    transition: transform 0.5s ease-out;
+    &:hover{
+        font-weight: bold;
+        background: var(--BoutonHover);
+        box-shadow: none;
+        border: var(--BordureBouton);
+        transition: transform 0.5s ease-out;
+        transform: scale(1.1);
+    }
+    &:active{
+        transform: scale(1.05);
+        background: var(--BoutonActif);
+    }
+}
+
 .nav-principale {
     position: fixed;
     top: 0;
@@ -200,49 +228,52 @@ picture{
     opacity: 0;
     pointer-events: none;
     transition: opacity 200ms, transform 200ms;
-}
-
-.nav-principale > label{
-    position: fixed;
-    top: 10vh;
-    right: 5vw;
-    width: 10vw;
-}
-
-.nav-principale > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: start;
-    width: 90%;
-}
-
-.nav-principale a {
-    display: none;
-    text-decoration: none;
-    border-radius: 1rem;
-    width: 75%;
-    max-width: 500px;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 2rem;
-    background: var(--EcritureBouton);
-    color: var(--Bouton);
-    transition: transform 0.6s ease-out;
-    &:focus-visible {
-        outline: none;
+    .bouton{
+        width: 25vw;
+        margin: 1rem;
+        padding: 0.75rem;
+        font-size: 2.5rem;
     }
-    &:hover{
-        font-weight: bold;
-        box-shadow: var(--Ombre);
-        border: var(--BordureHover);
-        transform: scale(1.1) ;
+    label{
+        position: fixed;
+        top: 10vh;
+        right: 5vw;
+        width: 10vw;
     }
-    &:active{
-        border: none;
-        outline: var(--BordureHover);
-        outline-offset: -0.5rem;
-        border-radius: 1rem;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: start;
+        width: 60vw;
+        a {
+            display: none;
+            text-decoration: none;
+            border-radius: 1rem;
+            width: 45vw;
+            max-width: 500px;
+            margin: 0.5rem 1rem;
+            padding: 1rem;
+            font-size: 2rem;
+            background: var(--EcritureBouton);
+            color: var(--Bouton);
+            transition: transform 0.6s ease-out;
+            &:focus-visible {
+                outline: none;
+            }
+            &:hover{
+                font-weight: bold;
+                box-shadow: var(--Ombre);
+                border: var(--BordureHover);
+                transform: scale(1.1) ;
+            }
+            &:active{
+                border: none;
+                outline: var(--BordureHover);
+                outline-offset: -0.5rem;
+                border-radius: 1rem;
+            }
+        }
     }
 }
 
@@ -330,7 +361,7 @@ section{
             flex-wrap: wrap;
             justify-content: center;
             li:first-child{
-                background: var(--EcritureVert);
+                background-color: var(--EcritureVert);
                 color: var(--Tag);
                 font-weight: bold;
                 font-size: 1rem;
@@ -347,31 +378,6 @@ section{
         }
         a{
             display: block;
-            min-width: 200px;
-            padding: 0.5rem 2rem;
-            margin: 2.5rem auto; 
-            border: none;
-            font-family: Magnolia;
-            font-size: 1.25rem;
-            background: var(--Bouton);
-            border: var(--BordureBouton);
-            border-radius: 20px;
-            box-shadow: var(--Ombre);
-            text-decoration: none;
-            color: var(--EcritureBouton);
-            transition: transform 0.5s ease-out;
-            &:hover{
-                font-weight: bold;
-                background: var(--BoutonHover);
-                box-shadow: none;
-                border: var(--BordureBouton);
-                transition: transform 0.5s ease-out;
-                transform: scale(1.1);
-            }
-            &:active{
-                transform: scale(1.05);
-                background: var(--BoutonActif);
-            }
         }
     }
 }
@@ -446,33 +452,6 @@ section{
 }
 
 .arcade{
-    .changePage{
-        display: inline-block;
-        min-width: 200px;
-        padding: 0.5rem 2rem;
-        margin: 2.5rem auto; 
-        font-family: Magnolia;
-        font-size: 1.25rem;
-        background: var(--Bouton);
-        border: var(--BordureBouton);
-        border-radius: 20px;
-        box-shadow: var(--Ombre);
-        text-decoration: none;
-        color: var(--EcritureBouton);
-        transition: transform 0.5s ease-out;
-        &:hover{
-            font-weight: bold;
-            background: var(--BoutonHover);
-            box-shadow: none;
-            border: var(--BordureBouton);
-            transition: transform 0.5s ease-out;
-            transform: scale(1.1);
-        }
-        &:active{
-            transform: scale(1.05);
-            background: var(--BoutonActif);
-        }
-    }
     .grille {
         display: flex;
         flex-direction: column;
