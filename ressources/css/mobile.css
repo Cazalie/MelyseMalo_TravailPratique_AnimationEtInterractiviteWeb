@@ -146,6 +146,10 @@ picture{
     background-image: url(../images/flecheSombre.png);
 }
 
+.theme-toggle:checked ~ .site .arcade #recherche #btnRecherche{
+    background-image: url(../images/loupeSombre.png);
+}
+
 .theme-toggle {
     position: absolute;
     opacity: 0;
@@ -452,11 +456,87 @@ section{
 }
 
 .arcade{
+    #recherche{
+        display: inline-block;
+        margin: 2rem 0.5rem 0.5rem 0.5rem;
+        font-size: 1rem;
+        label{
+            color: var(--EcritureVert);
+            margin: 1rem;
+        }
+        #motCle,
+        #age{
+            height: 2rem;
+            margin: 0 1rem;
+            padding-left: 0.5rem;
+            background-color: var(--ArriereTransparent);
+            border: var(--BordureHover);
+            border-radius: 0.5rem;
+            color: var(--EcritureVert);
+            font-family: Philosopher;
+            &::placeholder{
+                padding-left: 0.5rem;
+                font-family: Magnolia;
+                color: var(--ArrierePlan);
+            }
+        }
+        #motCle{
+            min-width: 250px;
+            max-width: 500px;
+            width: 50vw;
+        }
+        #age{
+            min-width: 150px;
+            max-width: 250px;
+            width: 10vw;
+            option{
+                background-color: var(--Tag);
+            }
+        }
+        #btnRecherche{
+            background-image: url(../images/loupeClaire.png);
+            height: 2rem;
+            width: 2rem;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            background-size: cover;
+            &:active{
+                transform: scale(1.25);
+            }
+        }
+    }
     .grille {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
         padding: 1rem;
+        &.erreur{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+            &::before {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 175px;
+                background-image: url(../images/jeuIntrouvable.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &::after {
+                content: "Aucun jeu ne correspond à votre recherche";
+                display: block;
+                font-family: Magnolia;
+                font-size: 1.5rem;
+                margin: 1rem;
+                color: var(--EcritureVert);
+            }
+        }
         .tuile {
             border-radius: 1rem;
             height: 250px;

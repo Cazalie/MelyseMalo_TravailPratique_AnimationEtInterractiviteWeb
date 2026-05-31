@@ -28,13 +28,13 @@ html{
     --EcritureBleu:#0b222d;
     --EcritureBouton: #481468;
     --ArrierePlan: #82963c;
-    --ArriereTransparent:rgb(212, 229, 153, 0.5);
+    --ArriereTransparent:rgb(212, 229, 153, 0.75);
     --Tag: #d4e599;
     --DegradeCiel: linear-gradient(to bottom, #40bfff 10%, #afffff 90%);
     --Bouton: #e1d7ff;
     --BoutonHover:linear-gradient(to bottom left, #af32ff 10%, #e1d7ff 90%);
     --BoutonActif: #af32ff;
-    --BordureTag: 1px solid #338039;
+    --BordureTag: 1px solid #1b4b1f;
     --BordureBouton: 2px solid #481468;
     --BordureHover: 1px solid #e1d7ff;
     --Ombre:rgba(30, 30, 30, 0.25) 5px 5px 2.5px;
@@ -44,9 +44,9 @@ html{
     --EcritureVert: #82963c;
     --EcritureBleu:#0b222d;
     --EcritureBouton: #ff8080;
-    --ArrierePlan: #338039;
-    --ArriereTransparent:rgb(51, 128, 57, 0.5);
-    --Tag: #1b4b1f;
+    --ArrierePlan: #1b4b1f;
+    --ArriereTransparent:rgb(51, 128, 57, 0.75);
+    --Tag: #163d1a;
     --DegradeCiel: linear-gradient(to bottom, #afffff 10%, #40bfff 90%);
     --Bouton: #ffdfdf;
     --BoutonHover:linear-gradient(to bottom left, #ffbfbf 10%, #ffdfdf 90%);

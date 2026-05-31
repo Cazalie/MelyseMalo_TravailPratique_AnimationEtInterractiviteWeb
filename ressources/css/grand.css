@@ -78,6 +78,19 @@
     }
 
     .arcade{
+        #recherche{
+            display: inline-block;
+            margin: 3rem 0.5rem 0.5rem 0.5rem;
+            font-size: 1.25rem;
+            #motCle,
+            #age{
+                height: 2.5rem;
+            }
+            #btnRecherche{
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+        }
         .grille {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
