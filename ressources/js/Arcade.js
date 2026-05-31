@@ -9,7 +9,7 @@ if (sectionListeJeux){
         const articleJeu = gabarit.cloneNode(true).content;
         
         articleJeu.querySelector(".titreJeu").textContent = jeu.titre;
-        articleJeu.querySelector(".publicJeu").textContent = jeu.publicMin + " à " + jeu.publicMax + "ans";
+        articleJeu.querySelector(".publicJeu").textContent = jeu.publicMin + " à " + jeu.publicMax + " ans";
         articleJeu.querySelector(".descriptionJeu").textContent = jeu.description;
         articleJeu.querySelector(".developpeurJeu").textContent = "Développé par : " + jeu.developpeur;
         
