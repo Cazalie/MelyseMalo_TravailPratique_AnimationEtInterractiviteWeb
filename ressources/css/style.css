@@ -1,4 +1,4 @@
-/******************** GLOBAL ********************/
+/**************************************** GLOBAL ****************************************/
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -10,7 +10,7 @@ html{
     padding: 0;
 }
 
-/******************** VARIABLES ********************/
+/**************************************** Font ****************************************/
 @font-face {
   font-family: "Magnolia";
   src:
@@ -23,6 +23,7 @@ html{
     url(../font/Philosopher-Regular.ttf);
 }
 
+/**************************************** VARIABLES ****************************************/
 :root{
     --EcritureVert: #1b4b1f;
     --EcritureBleu:#0b222d;
@@ -57,6 +58,7 @@ html{
     --Ombre:rgba(30, 30, 30, 0.25) 5px 5px 2.5px;
 }
 
+/**************************************** Animations ****************************************/
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@view-transition */
 ::view-transition-old(arcade) {
     animation: sortie 0.5s ease-out forwards;

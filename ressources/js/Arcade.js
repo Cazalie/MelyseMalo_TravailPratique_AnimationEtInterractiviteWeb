@@ -41,8 +41,7 @@ function filtrerAge(liste, age) {
     age = Number(age);
     //Intervalle d'âge
     return liste.filter((jeu) =>
-        age >= jeu.publicMin &&
-        age <= jeu.publicMax
+        age >= jeu.publicMin && age <= jeu.publicMax
     );
 }
 
