@@ -57,7 +57,16 @@ html{
     --Ombre:rgba(30, 30, 30, 0.25) 5px 5px 2.5px;
 }
 
-@keyframes apparition-plat {
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@view-transition */
+::view-transition-old(arcade) {
+    animation: sortie 0.5s ease-out forwards;
+}
+
+::view-transition-new(arcade) {
+    animation: apparition 1s ease-out forwards;
+}
+
+@keyframes apparition {
 	from {
 		opacity: 0;
 		translate: -50px 0;
@@ -67,6 +76,17 @@ html{
 		opacity: 1;
 		translate: 0 0;
 	}
+}
+
+@keyframes sortie {
+    from {
+        opacity: 1;
+		translate: 0 0;
+    }
+    to {
+        opacity: 0;
+		translate: -50px 0;
+    }
 }
 
 @keyframes dactylo {

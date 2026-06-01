@@ -6,6 +6,7 @@ const boutonRecherche = document.querySelector("#btnRecherche");
 const champRecherche = document.querySelector("#motCle");
 const selectionAge = document.querySelector("#age");
 
+
 /**************************************** Fonctions Filtres ****************************************/
 function normaliser(texte) {
     return texte.trim().toLowerCase();
@@ -46,7 +47,7 @@ function filtrerAge(liste, age) {
 }
 
 
-/**************************************** Fonction AfficherJeux() ****************************************/
+/**************************************** Fonction AfficherJeux(liste) ****************************************/
 function afficherJeux(liste) {
     let nombreTuile = 3;
     sectionListeJeux.innerHTML = "";
@@ -121,7 +122,11 @@ function rechercherJeux() {
         selectionAge.value
     );
 
-    afficherJeux(jeuxFiltres);
+    //Lance l'animation en appelant la fonction AfficherJeux(liste)
+    //https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition
+    document.startViewTransition(() => {
+        afficherJeux(jeuxFiltres);
+    });
 }
 
 
